@@ -75,7 +75,7 @@ public class RobotService {
 
         String[] args = parts[1].split(",");
 
-        if (args.length != 3) {
+        if (args.length >= 3) {
             log.warn("PLACE command expects X,Y,F — got [{}], ignored", parts[1]);
             return null;
         }
