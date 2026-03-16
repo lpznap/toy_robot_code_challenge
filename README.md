@@ -26,7 +26,7 @@ Commands are read from standard input or a file, and the robot's current positio
 
 **<mark>Once you have the JAR, choose how to run it:</mark>**
 <br>
-<span style="color:red;">***The JAR file is already provided in the root directory of the project. (build/libs/toy-robot-1.0.0.jar)***</span>
+🔴 <ins>***The JAR file is already provided in the root directory of the project. (build/libs/toy-robot-1.0.0.jar)*** </ins>
 
 **Step 1 — Run interactively (stdin):**
 
