@@ -140,17 +140,42 @@ The **fat JAR** (`toy-robot-1.0.0.jar`) bundles Spring Boot, Lombok-generated co
 
 **Step 1 — Run interactively (stdin):**
 
-Starts the application and waits for commands typed in the terminal.
+Starts the application and waits for commands typed in the terminal one by one.
 ```bash
 java -jar build/libs/toy-robot-1.0.0.jar
 ```
 Type commands and press **Ctrl+D** (Mac/Linux) or **Ctrl+Z then Enter** (Windows) to quit.
+
+Example session:
+```
+INFO  c.t.runner.RobotCommandRunner - Starting interactive stdin session
+INFO  c.t.runner.RobotCommandRunner - Toy Robot Simulator — enter commands (Ctrl+D / Ctrl+Z to quit)
+INFO  c.t.runner.RobotCommandRunner -   Commands: PLACE X,Y,F | MOVE | LEFT | RIGHT | REPORT
+
+PLACE 0,0,NORTH
+INFO  c.t.service.RobotService - Robot placed at (0,0) facing NORTH
+MOVE
+INFO  c.t.service.RobotService - Robot moved from (0,0) to (0,1)
+REPORT
+INFO  c.t.runner.RobotCommandRunner - Output: 0,1,NORTH
+```
 
 **Step 2 — Run with a commands file (pass as CLI argument):**
 
 The first argument after the JAR path is treated as a file path to read commands from.
 ```bash
 java -jar build/libs/toy-robot-1.0.0.jar src/test/resources/example-a.txt
+```
+
+Expected output:
+```
+INFO  c.t.runner.RobotCommandRunner - Input source: CLI argument -> src/test/resources/example-a.txt
+INFO  c.t.runner.RobotCommandRunner - Processing commands from file: src/test/resources/example-a.txt
+INFO  c.t.service.RobotService      - Robot placed at (0,0) facing NORTH
+INFO  c.t.service.RobotService      - Robot moved from (0,0) to (0,1)
+INFO  c.t.service.RobotService      - REPORT: 0,1,NORTH
+INFO  c.t.runner.RobotCommandRunner - Output: 0,1,NORTH
+INFO  c.t.runner.RobotCommandRunner - Processing complete — 3 line(s) read, 1 REPORT output(s) produced
 ```
 
 **Step 3 — Run with a commands file (pass as system property):**
@@ -160,14 +185,28 @@ An alternative to the CLI argument, useful in scripts or CI pipelines where you 
 java -Dinput.file=src/test/resources/example-a.txt -jar build/libs/toy-robot-1.0.0.jar
 ```
 
-Note: `-D` system properties must appear **before** `-jar` in the command.
+Note: `-D` system properties must appear **before** `-jar` in the command. Output is identical to Step 2.
 
 **Step 4 — Copy the JAR anywhere and run it independently:**
 
-The fat JAR is fully self-contained. You can copy it to any folder or machine and run it with only Java 17+ installed — no Gradle, no `src/` folder, no `build.gradle` needed.
+The fat JAR is fully self-contained. Copy it to any folder or machine and run it with only Java 17+ installed — no Gradle, no `src/` folder, no `build.gradle` needed.
 ```bash
 cp build/libs/toy-robot-1.0.0.jar ~/Desktop/toy-robot.jar
-java -jar ~/Desktop/toy-robot.jar path/to/commands.txt
+java -jar ~/Desktop/toy-robot.jar src/test/resources/example-c.txt
+```
+
+Expected output:
+```
+INFO  c.t.runner.RobotCommandRunner - Input source: CLI argument -> src/test/resources/example-c.txt
+INFO  c.t.runner.RobotCommandRunner - Processing commands from file: src/test/resources/example-c.txt
+INFO  c.t.service.RobotService      - Robot placed at (1,2) facing EAST
+INFO  c.t.service.RobotService      - Robot moved from (1,2) to (2,2)
+INFO  c.t.service.RobotService      - Robot moved from (2,2) to (3,2)
+INFO  c.t.service.RobotService      - Robot turned LEFT: EAST -> NORTH
+INFO  c.t.service.RobotService      - Robot moved from (3,2) to (3,3)
+INFO  c.t.service.RobotService      - REPORT: 3,3,NORTH
+INFO  c.t.runner.RobotCommandRunner - Output: 3,3,NORTH
+INFO  c.t.runner.RobotCommandRunner - Processing complete — 6 line(s) read, 1 REPORT output(s) produced
 ```
 
 ---
