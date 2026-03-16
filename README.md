@@ -17,7 +17,6 @@ Commands are read from standard input or a file, and the robot's current positio
 
 **Additional input rules:**
 - Commands are **case-insensitive** — `place 0,0,north` works the same as `PLACE 0,0,NORTH`.
-- Lines beginning with `#` are treated as **comments** and skipped.
 - **Blank lines** are skipped.
 - There is **no space** between `PLACE` and its arguments is allowed only with a single space: `PLACE X,Y,F`.
 
