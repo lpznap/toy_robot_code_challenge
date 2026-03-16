@@ -4,6 +4,7 @@ import com.toyrobot.utils.Direction;
 import com.toyrobot.utils.Position;
 import com.toyrobot.model.Robot;
 import com.toyrobot.model.Table;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,6 +16,18 @@ public class RobotService {
 
     private final Table table;
     private final Robot robot;
+
+    public RobotService() {
+        this.table = new Table();
+        this.robot = new Robot();
+        log.info("RobotService initialised with default {}x{} table", table.getSize(), table.getSize());
+    }
+
+    public RobotService(Table table) {
+        this.table = table;
+        this.robot = new Robot();
+        log.info("RobotService initialised with custom {}x{} table", table.getSize(), table.getSize());
+    }
 
     // -------------------------------------------------------------------------
     // Public command API
