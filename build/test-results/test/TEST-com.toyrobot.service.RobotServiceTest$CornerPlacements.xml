@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Corner placements and movements" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-03-28T07:49:25" hostname="Twins-MacBook-Pro.local" time="0.065">
+  <properties/>
+  <testcase name="Robot placed in SW corner (0,0) can only move NORTH or EAST" classname="com.toyrobot.service.RobotServiceTest$CornerPlacements" time="0.064"/>
+  <testcase name="Robot placed in NE corner (4,4) can only move SOUTH or WEST" classname="com.toyrobot.service.RobotServiceTest$CornerPlacements" time="0.001"/>
+  <system-out><![CDATA[14:49:25.197 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing SOUTH
+14:49:25.199 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (0,0) facing SOUTH would fall off the table
+14:49:25.201 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,0,SOUTH
+14:49:25.225 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: SOUTH -> WEST
+14:49:25.225 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (0,0) facing WEST would fall off the table
+14:49:25.225 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,0,WEST
+14:49:25.230 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (4,4) facing NORTH
+14:49:25.230 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,4) facing NORTH would fall off the table
+14:49:25.231 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,4,NORTH
+14:49:25.231 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: NORTH -> EAST
+14:49:25.231 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,4) facing EAST would fall off the table
+14:49:25.231 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,4,EAST
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

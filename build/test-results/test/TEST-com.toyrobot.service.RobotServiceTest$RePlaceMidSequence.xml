@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Re-PLACE mid-sequence" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-03-28T07:49:25" hostname="Twins-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="Second PLACE overwrites the first" classname="com.toyrobot.service.RobotServiceTest$RePlaceMidSequence" time="0.0"/>
+  <system-out><![CDATA[14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (3,3) facing SOUTH
+14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 3,3,SOUTH
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

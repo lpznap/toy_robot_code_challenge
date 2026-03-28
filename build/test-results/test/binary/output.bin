@@ -1,0 +1,103 @@
+h14:49:25.197 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing SOUTH
+‹14:49:25.199 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (0,0) facing SOUTH would fall off the table
+W14:49:25.201 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,0,SOUTH
+g14:49:25.225 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: SOUTH -> WEST
+Š14:49:25.225 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (0,0) facing WEST would fall off the table
+V14:49:25.225 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,0,WEST
+h14:49:25.230 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (4,4) facing NORTH
+‹14:49:25.230 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (4,4) facing NORTH would fall off the table
+W14:49:25.231 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,4,NORTH
+g14:49:25.231 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: NORTH -> EAST
+Š14:49:25.231 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (4,4) facing EAST would fall off the table
+V14:49:25.231 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,4,EAST
+h14:49:25.236 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+W14:49:25.237 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+x14:49:25.237 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F â€” got [1,2], ignored
+„14:49:25.237 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F â€” got [1,2,NORTH,EXTRA], ignored
+h14:49:25.238 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+d14:49:25.238 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [FLY]
+i14:49:25.238 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [JUMP 2,2]
+W14:49:25.238 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+£14:49:25.239 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE abc,def,NORTH], ignored: For input string: "abc"
+	h14:49:25.239 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+	W14:49:25.240 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+
+h14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+
+e14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+
+f14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+
+V14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,1,WEST
+h14:49:25.242 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+t14:49:25.242 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [# This is a comment]
+W14:49:25.242 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+Á14:49:25.243 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE 1,2,DIAGONAL], ignored: No enum constant com.toyrobot.utils.Direction.DIAGONAL
+h14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+f14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+f14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: WEST -> SOUTH
+f14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: SOUTH -> EAST
+f14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: EAST -> NORTH
+W14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+h14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+f14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+V14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,WEST
+f14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: WEST -> SOUTH
+W14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,SOUTH
+f14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: SOUTH -> EAST
+V14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,EAST
+f14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: EAST -> NORTH
+W14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+h14:49:25.247 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+g14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: NORTH -> EAST
+V14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,EAST
+g14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: EAST -> SOUTH
+W14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,SOUTH
+g14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: SOUTH -> WEST
+V14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,WEST
+g14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: WEST -> NORTH
+W14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+h14:49:25.249 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+g14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: NORTH -> EAST
+g14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: EAST -> SOUTH
+g14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: SOUTH -> WEST
+g14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: WEST -> NORTH
+W14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+h14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+e14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+h14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (3,3) facing SOUTH
+W14:49:25.251 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 3,3,SOUTH
+14:49:25.253 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored â€” position (9,9) is outside the 5x5 table
+g14:49:25.253 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing EAST
+V14:49:25.253 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,EAST
+g14:49:25.256 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (3,0) facing EAST
+e14:49:25.256 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (3,0) to (4,0)
+Š14:49:25.256 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (4,0) facing EAST would fall off the table
+Š14:49:25.256 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (4,0) facing EAST would fall off the table
+V14:49:25.256 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,0,EAST
+14:49:25.257 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored â€” position (5,5) is outside the 5x5 table
+h14:49:25.258 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,4) facing NORTH
+‹14:49:25.258 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (2,4) facing NORTH would fall off the table
+W14:49:25.259 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,4,NORTH
+€14:49:25.260 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored â€” position (-1,0) is outside the 5x5 table
+ h14:49:25.262 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,0) facing SOUTH
+ ‹14:49:25.262 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (2,0) facing SOUTH would fall off the table
+ W14:49:25.262 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,0,SOUTH
+!g14:49:25.264 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (4,2) facing EAST
+!Š14:49:25.264 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (4,2) facing EAST would fall off the table
+!V14:49:25.264 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,2,EAST
+"g14:49:25.265 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,2) facing WEST
+"Š14:49:25.265 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored â€” robot at (0,2) facing WEST would fall off the table
+"V14:49:25.265 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,2,WEST
+$#h14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+$#e14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+$#W14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,1,NORTH
+$%h14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+$%f14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+$%V14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,0,WEST
+$&g14:49:25.269 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,2) facing EAST
+$&e14:49:25.269 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (1,2) to (2,2)
+$&e14:49:25.269 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (2,2) to (3,2)
+$&f14:49:25.270 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: EAST -> NORTH
+$&e14:49:25.270 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (3,2) to (3,3)
+$&W14:49:25.270 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 3,3,NORTH

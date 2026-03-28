@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Commands before first valid PLACE are ignored" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-03-28T07:49:25" hostname="Twins-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="Commands before an invalid PLACE are still ignored" classname="com.toyrobot.service.RobotServiceTest$BeforePlaced" time="0.001"/>
+  <testcase name="LEFT before PLACE is ignored" classname="com.toyrobot.service.RobotServiceTest$BeforePlaced" time="0.001"/>
+  <testcase name="REPORT before PLACE returns null" classname="com.toyrobot.service.RobotServiceTest$BeforePlaced" time="0.0"/>
+  <testcase name="RIGHT before PLACE is ignored" classname="com.toyrobot.service.RobotServiceTest$BeforePlaced" time="0.0"/>
+  <testcase name="MOVE before PLACE returns null" classname="com.toyrobot.service.RobotServiceTest$BeforePlaced" time="0.0"/>
+  <system-out><![CDATA[14:49:25.253 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored — position (9,9) is outside the 5x5 table
+14:49:25.253 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing EAST
+14:49:25.253 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,EAST
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Rotations — full 360° cycles" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-03-28T07:49:25" hostname="Twins-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="Four LEFT turns bring the robot back to NORTH" classname="com.toyrobot.service.RobotServiceTest$Rotations" time="0.001"/>
+  <testcase name="NORTH → LEFT = WEST → LEFT = SOUTH → LEFT = EAST → LEFT = NORTH" classname="com.toyrobot.service.RobotServiceTest$Rotations" time="0.001"/>
+  <testcase name="NORTH → RIGHT = EAST → RIGHT = SOUTH → RIGHT = WEST → RIGHT = NORTH" classname="com.toyrobot.service.RobotServiceTest$Rotations" time="0.002"/>
+  <testcase name="Four RIGHT turns bring the robot back to NORTH" classname="com.toyrobot.service.RobotServiceTest$Rotations" time="0.001"/>
+  <system-out><![CDATA[14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: WEST -> SOUTH
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: SOUTH -> EAST
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: EAST -> NORTH
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,WEST
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: WEST -> SOUTH
+14:49:25.245 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,SOUTH
+14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: SOUTH -> EAST
+14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,EAST
+14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: EAST -> NORTH
+14:49:25.246 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+14:49:25.247 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: NORTH -> EAST
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,EAST
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: EAST -> SOUTH
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,SOUTH
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: SOUTH -> WEST
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,WEST
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: WEST -> NORTH
+14:49:25.248 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+14:49:25.249 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,2) facing NORTH
+14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: NORTH -> EAST
+14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: EAST -> SOUTH
+14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: SOUTH -> WEST
+14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned RIGHT: WEST -> NORTH
+14:49:25.250 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,2,NORTH
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

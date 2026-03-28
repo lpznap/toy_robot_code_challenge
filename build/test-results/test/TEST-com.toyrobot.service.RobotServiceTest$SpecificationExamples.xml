@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Specification examples" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-03-28T07:49:25" hostname="Twins-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="Example a: PLACE 0,0,NORTH → MOVE → REPORT = 0,1,NORTH" classname="com.toyrobot.service.RobotServiceTest$SpecificationExamples" time="0.001"/>
+  <testcase name="Example b: PLACE 0,0,NORTH → LEFT → REPORT = 0,0,WEST" classname="com.toyrobot.service.RobotServiceTest$SpecificationExamples" time="0.0"/>
+  <testcase name="Example c: PLACE 1,2,EAST → MOVE MOVE LEFT MOVE → REPORT = 3,3,NORTH" classname="com.toyrobot.service.RobotServiceTest$SpecificationExamples" time="0.001"/>
+  <system-out><![CDATA[14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,1,NORTH
+14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -> WEST
+14:49:25.268 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,0,WEST
+14:49:25.269 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,2) facing EAST
+14:49:25.269 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (1,2) to (2,2)
+14:49:25.269 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (2,2) to (3,2)
+14:49:25.270 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: EAST -> NORTH
+14:49:25.270 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (3,2) to (3,3)
+14:49:25.270 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 3,3,NORTH
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

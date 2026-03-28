@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Input robustness</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Input robustness</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.toyrobot.service.html">com.toyrobot.service</a> &gt; RobotServiceTest$InputRobustness</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.005s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Blank / whitespace-only lines are ignored</td>
+<td class="success">blankLines()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Commands are case-insensitive for MOVE/LEFT/RIGHT/REPORT</td>
+<td class="success">commandsCaseInsensitive()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Comment lines (starting with #) are ignored</td>
+<td class="success">commentLines()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PLACE with malformed args is ignored</td>
+<td class="success">malformedPlace()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Null input is handled gracefully</td>
+<td class="success">nullInput()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Commands are case-insensitive for PLACE direction</td>
+<td class="success">placeDirectionCaseInsensitive()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PLACE with invalid direction string is ignored</td>
+<td class="success">placeInvalidDirection()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">PLACE with wrong number of args is ignored</td>
+<td class="success">placeWrongArgCount()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Unknown commands are silently ignored</td>
+<td class="success">unknownCommands()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>14:49:25.236 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+14:49:25.237 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+14:49:25.237 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F — got [1,2], ignored
+14:49:25.237 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F — got [1,2,NORTH,EXTRA], ignored
+14:49:25.238 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+14:49:25.238 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [FLY]
+14:49:25.238 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [JUMP 2,2]
+14:49:25.238 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+14:49:25.239 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE abc,def,NORTH], ignored: For input string: &quot;abc&quot;
+14:49:25.239 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+14:49:25.240 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -&gt; WEST
+14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,1,WEST
+14:49:25.242 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+14:49:25.242 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [# This is a comment]
+14:49:25.242 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+14:49:25.243 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE 1,2,DIAGONAL], ignored: No enum constant com.toyrobot.utils.Direction.DIAGONAL
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 28, 2026, 2:49:25 PM</p>
+</div>
+</div>
+</body>
+</html>
