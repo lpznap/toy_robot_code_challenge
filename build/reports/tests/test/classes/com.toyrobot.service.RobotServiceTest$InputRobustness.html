@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.005s</div>
+<div class="counter">0.004s</div>
 <p>duration</p>
 </div>
 </td>
@@ -81,7 +81,7 @@
 <tr>
 <td class="success">Blank / whitespace-only lines are ignored</td>
 <td class="success">blankLines()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -93,7 +93,7 @@
 <tr>
 <td class="success">Comment lines (starting with #) are ignored</td>
 <td class="success">commentLines()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -111,13 +111,13 @@
 <tr>
 <td class="success">Commands are case-insensitive for PLACE direction</td>
 <td class="success">placeDirectionCaseInsensitive()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">PLACE with invalid direction string is ignored</td>
 <td class="success">placeInvalidDirection()</td>
-<td class="success">0.001s</td>
+<td class="success">0s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -129,7 +129,7 @@
 <tr>
 <td class="success">Unknown commands are silently ignored</td>
 <td class="success">unknownCommands()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -137,25 +137,25 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:49:25.236 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
-14:49:25.237 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
-14:49:25.237 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F — got [1,2], ignored
-14:49:25.237 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F — got [1,2,NORTH,EXTRA], ignored
-14:49:25.238 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
-14:49:25.238 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [FLY]
-14:49:25.238 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [JUMP 2,2]
-14:49:25.238 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
-14:49:25.239 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE abc,def,NORTH], ignored: For input string: &quot;abc&quot;
-14:49:25.239 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
-14:49:25.240 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
-14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
-14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
-14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -&gt; WEST
-14:49:25.241 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,1,WEST
-14:49:25.242 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
-14:49:25.242 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [# This is a comment]
-14:49:25.242 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
-14:49:25.243 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE 1,2,DIAGONAL], ignored: No enum constant com.toyrobot.utils.Direction.DIAGONAL
+<pre>02:16:00.723 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+02:16:00.723 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+02:16:00.724 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F — got [1,2], ignored
+02:16:00.724 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command expects X,Y,F — got [1,2,NORTH,EXTRA], ignored
+02:16:00.724 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+02:16:00.725 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [FLY]
+02:16:00.725 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [JUMP 2,2]
+02:16:00.725 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+02:16:00.725 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE abc,def,NORTH], ignored: For input string: &quot;abc&quot;
+02:16:00.726 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+02:16:00.726 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+02:16:00.727 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,0) facing NORTH
+02:16:00.727 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (0,0) to (0,1)
+02:16:00.727 [Test worker] INFO com.toyrobot.service.RobotService -- Robot turned LEFT: NORTH -&gt; WEST
+02:16:00.727 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,1,WEST
+02:16:00.727 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (1,1) facing NORTH
+02:16:00.727 [Test worker] WARN com.toyrobot.service.RobotService -- Unknown command ignored: [# This is a comment]
+02:16:00.728 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 1,1,NORTH
+02:16:00.729 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE command has malformed arguments [PLACE 1,2,DIAGONAL], ignored: No enum constant com.toyrobot.utils.Direction.DIAGONAL
 </pre>
 </span>
 </div>
@@ -167,7 +167,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 28, 2026, 2:49:25 PM</p>
+<a href="http://www.gradle.org">Gradle 8.6</a> at Mar 29, 2026, 2:16:00 AM</p>
 </div>
 </div>
 </body>

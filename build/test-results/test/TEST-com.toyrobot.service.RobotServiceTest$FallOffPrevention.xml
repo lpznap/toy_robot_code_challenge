@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Fall-off prevention" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-03-28T07:49:25" hostname="Twins-MacBook-Pro.local" time="0.011">
+<testsuite name="Fall-off prevention" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-03-28T19:16:00" hostname="Twins-MacBook-Pro.local" time="0.003">
   <properties/>
-  <testcase name="Multiple moves stop at the wall and further moves are allowed" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.001"/>
+  <testcase name="Multiple moves stop at the wall and further moves are allowed" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
   <testcase name="PLACE outside table boundaries is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
-  <testcase name="MOVE from north edge (y=4) heading NORTH is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.001"/>
-  <testcase name="PLACE at negative coordinates is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.001"/>
-  <testcase name="MOVE from south edge (y=0) heading SOUTH is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.002"/>
-  <testcase name="MOVE from east edge (x=4) heading EAST is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.001"/>
-  <testcase name="MOVE from west edge (x=0) heading WEST is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.001"/>
-  <system-out><![CDATA[14:49:25.256 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (3,0) facing EAST
-14:49:25.256 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (3,0) to (4,0)
-14:49:25.256 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,0) facing EAST would fall off the table
-14:49:25.256 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,0) facing EAST would fall off the table
-14:49:25.256 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,0,EAST
-14:49:25.257 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored — position (5,5) is outside the 5x5 table
-14:49:25.258 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,4) facing NORTH
-14:49:25.258 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (2,4) facing NORTH would fall off the table
-14:49:25.259 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,4,NORTH
-14:49:25.260 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored — position (-1,0) is outside the 5x5 table
-14:49:25.262 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,0) facing SOUTH
-14:49:25.262 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (2,0) facing SOUTH would fall off the table
-14:49:25.262 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,0,SOUTH
-14:49:25.264 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (4,2) facing EAST
-14:49:25.264 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,2) facing EAST would fall off the table
-14:49:25.264 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,2,EAST
-14:49:25.265 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,2) facing WEST
-14:49:25.265 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (0,2) facing WEST would fall off the table
-14:49:25.265 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,2,WEST
+  <testcase name="MOVE from north edge (y=4) heading NORTH is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
+  <testcase name="PLACE at negative coordinates is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
+  <testcase name="MOVE from south edge (y=0) heading SOUTH is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
+  <testcase name="MOVE from east edge (x=4) heading EAST is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
+  <testcase name="MOVE from west edge (x=0) heading WEST is ignored" classname="com.toyrobot.service.RobotServiceTest$FallOffPrevention" time="0.0"/>
+  <system-out><![CDATA[02:16:00.737 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (3,0) facing EAST
+02:16:00.737 [Test worker] INFO com.toyrobot.service.RobotService -- Robot moved from (3,0) to (4,0)
+02:16:00.737 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,0) facing EAST would fall off the table
+02:16:00.737 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,0) facing EAST would fall off the table
+02:16:00.737 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,0,EAST
+02:16:00.738 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored — position (5,5) is outside the 5x5 table
+02:16:00.738 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,4) facing NORTH
+02:16:00.738 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (2,4) facing NORTH would fall off the table
+02:16:00.738 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,4,NORTH
+02:16:00.739 [Test worker] WARN com.toyrobot.service.RobotService -- PLACE ignored — position (-1,0) is outside the 5x5 table
+02:16:00.739 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (2,0) facing SOUTH
+02:16:00.739 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (2,0) facing SOUTH would fall off the table
+02:16:00.739 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 2,0,SOUTH
+02:16:00.740 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (4,2) facing EAST
+02:16:00.740 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (4,2) facing EAST would fall off the table
+02:16:00.740 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 4,2,EAST
+02:16:00.740 [Test worker] INFO com.toyrobot.service.RobotService -- Robot placed at (0,2) facing WEST
+02:16:00.740 [Test worker] WARN com.toyrobot.service.RobotService -- MOVE ignored — robot at (0,2) facing WEST would fall off the table
+02:16:00.740 [Test worker] INFO com.toyrobot.service.RobotService -- REPORT: 0,2,WEST
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

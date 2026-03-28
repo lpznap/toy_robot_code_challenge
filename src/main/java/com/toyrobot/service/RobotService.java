@@ -4,7 +4,6 @@ import com.toyrobot.utils.Direction;
 import com.toyrobot.utils.Position;
 import com.toyrobot.model.Robot;
 import com.toyrobot.model.Table;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
