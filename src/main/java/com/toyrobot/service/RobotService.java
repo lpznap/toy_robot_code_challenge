@@ -38,7 +38,7 @@ public class RobotService {
         String line = rawLine.strip();
 
         if (line.isEmpty()) {
-            log.trace("Skipping blank");
+            log.debug("Skipping blank");
             return null;
         }
 

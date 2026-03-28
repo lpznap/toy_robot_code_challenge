@@ -97,7 +97,7 @@ public class RobotCommandRunner implements CommandLineRunner {
         while ((line = reader.readLine()) != null) {
             lineNumber++;
 
-            log.trace("Line {}: [{}]", lineNumber, line);
+            log.debug("Line {}: [{}]", lineNumber, line);
 
             String result = robotService.execute(line);
 
