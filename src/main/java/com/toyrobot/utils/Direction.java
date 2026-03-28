@@ -26,7 +26,7 @@ public enum Direction {
     }
 
     public int deltaX() {
-        // Java 17 switch expression — returns a value directly
+        // Switch expression — returns a value directly
         return switch (this) {
             case EAST  ->  1;   // Moving east increases X
             case WEST  -> -1;   // Moving west decreases X
